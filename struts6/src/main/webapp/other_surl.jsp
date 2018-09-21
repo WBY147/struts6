@@ -12,17 +12,9 @@
     <title>Title</title>
 </head>
 <body>
-
-<s:bean name="cap.bean.User" id="u">
-    <s:param name="id" value="1"/>
-    <s:param name="username" value="'cap'"/>
-    <s:param name="password" value="'cap'"/>
-</s:bean>
-
-<s:push value="#u">
-    <s:property value="id"/>
-    <s:property value="username"/>
-    <s:property value="password"/>
-</s:push>
+<s:url value="index.jsp" var="url">
+    <s:param name="username">starlee2008</s:param>
+</s:url>
+<s:a href="%{url}">s:url和s:a的用法</s:a>
 </body>
 </html>

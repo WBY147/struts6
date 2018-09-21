@@ -12,17 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-
-<s:bean name="cap.bean.User" id="u">
-    <s:param name="id" value="1"/>
-    <s:param name="username" value="'cap'"/>
-    <s:param name="password" value="'cap'"/>
-</s:bean>
-
-<s:push value="#u">
-    <s:property value="id"/>
-    <s:property value="username"/>
-    <s:property value="password"/>
-</s:push>
+<s:action name="login" namespace="/" executeResult="true"></s:action>
 </body>
 </html>
